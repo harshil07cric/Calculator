@@ -11,7 +11,7 @@ function clicked(a){
     }
     
     let operator=['+','×','÷','-','%','1/x','**','√'];
-    if(['1','2','3','4','5','6','7','8','9','√','(',')'].includes(a) && item1.innerHTML=='<p>0</p>'){
+    if(['0',1','2','3','4','5','6','7','8','9','√','(',')'].includes(a) && item1.innerHTML=='<p>0</p>'){
         item1.innerHTML=`<p>${a}</p>`;
     }   
     else if(operator.filter(op=>oldp.replace(/<\/?[^>]+(>|$)/g,"").endsWith(op)).length>0
